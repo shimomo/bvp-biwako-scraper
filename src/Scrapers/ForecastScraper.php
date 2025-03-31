@@ -54,19 +54,21 @@ class ForecastScraper extends BaseScraper
             }
         }
 
+        $reporterYesterdayCommentLabel = '記者予想 前日コメント';
         $reporterYesterdayCourseLabel = '記者予想 前日コース';
+        $reporterYesterdayFocusLabel = '記者予想 前日フォーカス';
         $reporterYesterdayFocusExactaLabel = '記者予想 前日フォーカス 2連単';
         $reporterYesterdayFocusTrifectaLabel = '記者予想 前日フォーカス 3連単';
-        $reporterYesterdayCommentLabel = '記者予想 前日コメント';
-        $reporterYesterdayFocusLabel = '記者予想 前日フォーカス';
 
+        $reporterYesterdayComment = Normalizer::normalize($forecasts['.comment-div'][0]);
         $reporterYesterdayCourse = Normalizer::normalize(implode($forecasts['.sinnyu-div > ul > li.num']));
+        $reporterYesterdayFocus = Normalizer::normalize($forecasts['.focus > li']);
         $reporterYesterdayFocusExacta = [];
         $reporterYesterdayFocusTrifecta = Normalizer::normalize($forecasts['.focus > li']);
-        $reporterYesterdayComment = Normalizer::normalize($forecasts['.comment-div'][0]);
-        $reporterYesterdayFocus = array_merge($reporterYesterdayFocusExacta, $reporterYesterdayFocusTrifecta);
 
         return [
+            'reporter_yesterday_comment_label' => $reporterYesterdayCommentLabel,
+            'reporter_yesterday_comment' => $reporterYesterdayComment,
             'reporter_yesterday_course_label' => $reporterYesterdayCourseLabel,
             'reporter_yesterday_course' => $reporterYesterdayCourse,
             'reporter_yesterday_focus_label' => $reporterYesterdayFocusLabel,
@@ -75,8 +77,6 @@ class ForecastScraper extends BaseScraper
             'reporter_yesterday_focus_exacta' => $reporterYesterdayFocusExacta,
             'reporter_yesterday_focus_trifecta_label' => $reporterYesterdayFocusTrifectaLabel,
             'reporter_yesterday_focus_trifecta' => $reporterYesterdayFocusTrifecta,
-            'reporter_yesterday_comment_label' => $reporterYesterdayCommentLabel,
-            'reporter_yesterday_comment' => $reporterYesterdayComment,
         ];
     }
 
