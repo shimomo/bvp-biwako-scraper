@@ -16,33 +16,33 @@ final class ForecastScraperDataProvider
     {
         return [
             [
-                'arguments' => [1, '2024-01-03'],
+                'arguments' => [1, '2025-03-16'],
                 'expected' => [
                     'reporter_yesterday_comment_label' => '記者予想 前日コメント',
-                    'reporter_yesterday_comment' => 'オープニングカードは山田が絶好枠。気合のインS攻勢で白星ゲットあるのみだ。ただ好調機を駆って前検好況な和田の一撃は逆転まで。川島、吉田が展開突いて',
+                    'reporter_yesterday_comment' => '地元優出はならなかった吉川だが仕上がりには自信の表情。ここは絶好枠を味方に白星奪取あるのみだ。良機を駆る加木が俊敏に差して浮上。雑賀、石川も次位争いへ',
                     'reporter_yesterday_course_label' => '記者予想 前日コース',
-                    'reporter_yesterday_course' => '123/456',
+                    'reporter_yesterday_course' => '123/465',
                     'reporter_yesterday_focus_label' => '記者予想 前日フォーカス',
-                    'reporter_yesterday_focus' => ['1=4-5', '1=4-6', '1-5-4', '1-6-4', '1-5-6'],
+                    'reporter_yesterday_focus' => ['1=2-3', '1=2-4', '1-3-2', '1-4-2', '1-3-4'],
                     'reporter_yesterday_focus_exacta_label' => '記者予想 前日フォーカス 2連単',
                     'reporter_yesterday_focus_exacta' => [],
                     'reporter_yesterday_focus_trifecta_label' => '記者予想 前日フォーカス 3連単',
-                    'reporter_yesterday_focus_trifecta' => ['1=4-5', '1=4-6', '1-5-4', '1-6-4', '1-5-6'],
+                    'reporter_yesterday_focus_trifecta' => ['1=2-3', '1=2-4', '1-3-2', '1-4-2', '1-3-4'],
                 ],
             ],
             [
-                'arguments' => [2, '2024-01-03'],
+                'arguments' => [2, '2025-03-16'],
                 'expected' => [
                     'reporter_yesterday_comment_label' => '記者予想 前日コメント',
-                    'reporter_yesterday_comment' => '前検気配は上々だった鶴本のセンター自在攻勢を本命視。吉川喜はその動きを見て逆転狙って。松浦は好枠を生かしたいところ。渡邉が巧腕さばき駆使して浮上へ',
+                    'reporter_yesterday_comment' => '新出の仕上がりは上々のムード。ライバル勢の攻めを制して押し切るのみだ。ただ好出足を誇る川上が差し逆転の場面は十分。小林センター自在に。井内展開探して',
                     'reporter_yesterday_course_label' => '記者予想 前日コース',
                     'reporter_yesterday_course' => '123/456',
                     'reporter_yesterday_focus_label' => '記者予想 前日フォーカス',
-                    'reporter_yesterday_focus' => ['3=4-1', '3=4-5', '3-1-4', '3-5-4', '3-1-5'],
+                    'reporter_yesterday_focus' => ['1=2-3', '1=2-5', '1-3-2', '1-5-2', '1-3-5'],
                     'reporter_yesterday_focus_exacta_label' => '記者予想 前日フォーカス 2連単',
                     'reporter_yesterday_focus_exacta' => [],
                     'reporter_yesterday_focus_trifecta_label' => '記者予想 前日フォーカス 3連単',
-                    'reporter_yesterday_focus_trifecta' => ['3=4-1', '3=4-5', '3-1-4', '3-5-4', '3-1-5'],
+                    'reporter_yesterday_focus_trifecta' => ['1=2-3', '1=2-5', '1-3-2', '1-5-2', '1-3-5'],
                 ],
             ],
         ];
